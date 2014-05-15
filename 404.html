@@ -85,119 +85,17 @@
 
 
     <div class="container">
-      
+       
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
 
-  <div class="row">
-    <div class="col-md-12">
-      <link rel="bookmark" href="/posts/2014/03/welcome.html" />
-      <h2 class="h2link">Welcome to CruZionsville News</h2>
-      
-
-<div class="date">
-	Posted: <span>March 19th 2014.</span>
-Tags:
-	
-		<span>
-			<a href="/summaries.html?tag=CruZionsville">CruZionsville</a>
-			
-		</span>
-	
-Categories:
-	
-		<span>
-			<a href="/summaries.html?category=General">General</a>
-			
-		</span>
-	
-</div>
-
-      <br>
-      <div class="blog_posting">
-        
-<p>Welcome to CruZionsville News!</p>
-
-
-      </div>
-    </div>
-  </div>
-
-<div class="row">
-  <div class="col-md-12">
-    <ul id="paginator"></ul>
-  </div>
-</div>
-
-
-<script type='text/javascript'>
-    $(function(){
-        //DOM loaded
-
-        $.getJSON( "/json/collections.json", function( data ) {
-          //console.log(data);
-
-          var posts = data.posts;
-
-          // find what page number we are by comparing our url to items
-          var url = $.url(); // parse the current page URL
-          var currentPage = url.param('pagenum');
-          if (currentPage == undefined) {
-            currentPage = 1; // figure out page num here!
-            var pathUrl = url.attr('path');
-            currentPage = _.findIndex(posts, { 'url': pathUrl }) + 1;  // needs some error handling!
-          }
-
-          var totalPages = posts.length;
-
-          var options = {
-            currentPage: currentPage, //currentPage,
-            totalPages: totalPages,
-            alignment: "left",
-            bootstrapMajorVersion: 3,
-            tooltipTitles: function (type, page, current) {
-                            var pageIndex = page-1;
-                            var currentPageIndex = currentPage - 1;
-                            switch (type) {
-                            case "first":
-                                return posts[0].title;
-                            case "prev":
-                                return ((currentPageIndex - 1) < 0) ? "" : posts[(currentPageIndex - 1)].title;
-                            case "next":
-                                return ((currentPageIndex + 1) > (posts.length-1)) ? "" : posts[(currentPageIndex + 1)].title;
-                            case "last":
-                                return posts[posts.length-1].title;
-                            case "page":
-                                return posts[pageIndex].title;
-                            }
-                        },
-            pageUrl: function(type, page, current) {
-                var pageIndex = page-1;
-                var currentPageIndex = currentPage - 1;
-                switch (type) {
-                case "first":
-                    return posts[0].url;
-                case "prev":
-                    return ((currentPageIndex - 1) < 0) ? "" : posts[(currentPageIndex - 1)].url;
-                case "next":
-                    return ((currentPageIndex + 1) > (posts.length-1)) ? "" : posts[(currentPageIndex + 1)].url
-                case "last":
-                    return posts[posts.length-1].url;
-                case "page":
-                    return posts[pageIndex].url;
-                }
-              }
-          }
-
-          $('#paginator').bootstrapPaginator(options);
-        });
-    });
-</script>
-
-
-
-
-
-
-
+	<article>
+		<p>The page you requested doesn't exist. Go here to <a href="/"> go back</a>.</p>
+	</article>
 
     </div>
     
