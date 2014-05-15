@@ -1,0 +1,19 @@
+{
+    "posts": [
+        {
+            "title": "Welcome to CruZionsville News",
+            "template": "post",
+            "date": "2014-03-20T00:00:00.000Z",
+            "type": "post",
+            "tags": [
+                "CruZionsville"
+            ],
+            "categories": [
+                "General"
+            ],
+            "url": "/posts/2014/03/welcome.html",
+            "fromMarkdown": true,
+            "excerpt": "\nWelcome to CruZionsville News!"
+        }
+    ]
+}
