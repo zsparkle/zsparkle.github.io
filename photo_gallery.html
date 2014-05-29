@@ -105,9 +105,12 @@
 <br>
 
 <br/><br/>
+
 <div class="row">
-  <div class="col-md-12">
-    
+  <div class="col-md-2">
+  </div>
+  <div class="col-md-8">
+      
 
 <div id="carousel1" class="carousel slide carousel-fade">
   <!-- Indicators-->
@@ -186,9 +189,12 @@
     }
    );
 </script>
-
+ 
+  </div>
+  <div class="col-md-2">
   </div>
 </div>
+
 
 <h1>Photos</h1>
 
@@ -201,11 +207,12 @@ $(document).ready(function () {
           $('#nanogallery1').nanoGallery({
             kind:'picasa',
             userID:'zsparkle.event@gmail.com',
-            thumbnailWidth: 'auto',
-            breadcrumbAutoHideTopLevel: true,
-            colorScheme: 'light',
-            thumbnailLabel: { position:'overImageOnBottom', display:true, displayDescription:true, hideIcons:true },
-            thumbnailHoverEffect: 'labelSlideUp'
+
+            thumbnailLabel: {
+              position: 'onBottom',
+              displayDescription: false,
+              hideIcons:true
+            }
           });
         });
 
